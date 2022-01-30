@@ -33,11 +33,11 @@ function* foo(index) {
 }
 
 const nums = [
-  1000_000_000, 
-  1.2e3, 
+  1000_000_000,
+  1.2e3,
   0x1f,
-  .14, 
-  1n, 
+  .14,
+  1n,
 ].filter(Boolean)
 
 
@@ -90,7 +90,7 @@ codeInput.addEventListener('input', () => {
 codeInput.value = fullExample
 
 function update() {
-  const code = codeInput.value?.trim() || ''
+  const code = codeInput.value || ''
   const output = highlight(code)
   
   codeOutput.innerHTML = output
